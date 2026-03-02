@@ -1,0 +1,87 @@
+/*
+CSS - Cascading Style Sheets
+Is a stylesheet language used to describe the presentation of a document written in HTML or XML. CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.
+There are three elements in a CSS rule-set(h1{color: red;}):
+1. Selector: The HTML element you want to style.(h1)
+2. Property: The aspect of the element you want to change.(color)
+3. Value: The value you want to give the property.(red)
+anything within the curly braces {} is called a declaration block, and each declaration ends with a semicolon (;). You can have multiple declarations within a declaration block, and they will be applied to the selected element(s).
+
+Types of Selectors:
+1. Universal Selector (*): Selects all elements on the page.
+2. Type Selector (h1, p, etc.): Selects all elements of a specific type.
+3. Class Selector (.class): Selects all elements with a specific class attribute.
+4. ID Selector (#id): Selects a single element with a specific id attribute.
+5. Attribute Selector ([attribute=value]): Selects elements based on the presence or value of an attribute.
+6. Pseudo-class Selector (:hover, :first-child, etc.): Selects elements based on their state or position in the document tree.
+7. Pseudo-element Selector (::before, ::after, etc.): Selects and styles specific parts of an element.
+8. Grouping Selector (h1, h2, h3): Selects multiple elements and applies the same styles to them.
+9. Descendant Selector (div p): Selects all p elements that are descendants of a div element.
+10. Child Selector (div > p): Selects all p elements that are direct children of a div element.
+11. Adjacent Sibling Selector (h1 + p): Selects the first p element that is immediately following an h1 element.
+12. General Sibling Selector (h1 ~ p): Selects all p elements that are siblings of an h1 element.
+13. Negation Selector (:not(selector)): Selects all elements that do not match the specified selector.
+14. Attribute Substring Selectors ([attribute^=value], [attribute$=value], [attribute*=value]): Selects elements based on whether an attribute value starts with, ends with, or contains a specified substring.
+15. Pseudo-class Functional Notation (:nth-child(n), :nth-of-type(n), etc.): Selects elements based on their position among siblings.
+16. Pseudo-element Functional Notation (::before, ::after, etc.): Selects and styles specific parts of an element.
+17. Column Selector (selector:nth-child(n)): Selects elements based on their position in a column of a table.
+18. State-based Selectors (:enabled, :disabled, :checked, etc.): Selects elements based on their state or user interaction.
+19. Language Selector (:lang(language)): Selects elements based on their language attribute.
+20. Root Selector (:root): Selects the root element of the document (usually the <html> element).
+21. Empty Selector (:empty): Selects elements that have no children (including text nodes).
+22. First-child Selector (:first-child): Selects the first child element of its parent.
+23. Last-child Selector (:last-child): Selects the last child element of its parent.
+24. Only-child Selector (:only-child): Selects an element that is the only child of its parent.
+25. etc.
+26. image Selector (img[src$=".jpg"]): Selects all img elements with a src attribute that ends with ".jpg".
+27. link Selector (a[href^="https"]): Selects all a elements with an href attribute that starts with "https".
+27. src Selector (script[src*="jquery"]): Selects all script elements with a src attribute that contains "jquery".
+
+
+
+Types of Properties:
+1. Color: color, background-color, border-color, etc.
+2. Text: font-family, font-size, text-align, text-decoration, etc.
+3. Box Model: width, height, padding, margin, border, etc.
+4. Positioning: position, top, right, bottom, left, z-index, etc
+5. Display: display, visibility, overflow, etc.
+6. Flexbox and Grid: flex, flex-direction, justify-content, align-items, grid-template-columns, grid-template-rows, etc.
+7. Animation and Transitions: animation, transition, transform, etc.
+8. Miscellaneous: opacity, cursor, box-shadow, etc.
+9. Media Queries: @media, etc.
+10. Variables: --variable-name, var(--variable-name), etc.
+11. Pseudo-elements: ::before, ::after, etc.
+12. Functions: calc(), rgb(), rgba(), hsl(), hsla(), etc.
+13. Shorthand Properties: margin, padding, border, background, font, etc.
+14. Vendor Prefixes: -webkit-, -moz-, -ms-, -o-, etc.
+15. Specificity: Inline styles, ID selectors, class selectors, type selectors, universal selectors, etc.
+16. Inheritance: Some properties are inherited by default (e.g., color, font-family), while others are not (e.g., margin, padding).
+17. Box Sizing: box-sizing: content-box, box-sizing: border-box, etc.
+18. Z-index: z-index: auto, z-index: 0, z-index: 1, etc.
+19. Units: px, em, rem, %, vw, vh, etc.
+20. Comments: // This is a comment, <!-- This is a comment -->, etc./* This is a comment */
+
+There are Three Types Of CSS:
+1. Inline CSS: Styles are applied directly to an HTML element using the style attribute.
+-Example:
+    <h1 style="color: red;">Hello World</h1>
+2. Internal CSS: Styles are defined within a <style> element in the head section of the HTML document.
+-Example:
+    <head>
+        <style>
+            h1 {
+                color: red;
+            }
+        </style>
+    </head>
+3. External CSS: Styles are defined in an external .css file and linked to the HTML document using the <link> element.
+-Example:
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+External CSS is the most efficient way to apply styles to multiple pages,
+as it allows you to maintain a single stylesheet that can be reused across different HTML documents.
+It also helps to keep the HTML code clean and separates the content from the presentation.
+
+*/
+

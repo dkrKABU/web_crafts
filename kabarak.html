@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title">Kabarak University</title>
+    <link rel="stylesheet" href="Kstyles.css">
+    
+</head>
+<style>
+    th
+    {
+        background-color: bisque;
+        color: #660000;
+    }
+    td
+    {
+        background-color: #660000;
+        color: bisque
+    }
+
+    /*
+    (A)Transform all h2s in the page to have the foloowing propeties:
+    1- color: #00008B.
+    2- give a continuos border bottom of the same color.
+    3- change the font type to Tahoma.
+    #NB: element selectors are denoted by the name of the element itself.
+    */
+    h2{
+        color: #00008B;
+        border-bottom: #00008B solid 2px;
+        font-family: Tahoma;
+    }
+
+    /*
+    (B)Choose any five elements from kabarak.html and give them an id (IDname - my_choice).
+    Use the id selector to select those elements and apply the following propeties:
+    1- italise the content.
+    2- change the color to brick red.
+    3- background color to #F6FFF6.
+    #NB: id selectors are denoted by a hash symbol (#) followed by the id name.
+    */
+    #my_choice
+    {
+        font-style: oblique;
+        color: #B22222;
+        background-color: #F6FFF6;
+
+    }
+    
+    /*
+    (C)Choose any three elements from kabarak.html and give them a class(CLASSname - my_class).
+    Create an external CSS file (<link rel="stylesheet" href="Kstyles.css">),
+    and use the class selector to select those elements and apply the following propeties:
+    1- background color: #E3F2FD.
+    
+    #NB: class selectors are denoted by a dot (.) followed by the class name.
+    */
+    
+</style>
+<body style="margin: 7.5%; background-image: url(/sky.jpg);background-size:cover ;">
+   <h1 style="color: #660000; border-bottom: #0252ff dotted 2px; padding: 5px;"><b><u><i>KABARAK UNIVERSITY</i></u></b></h1>
+   <h2>ABOUT</h2>
+
+   <h3 class="my_class">History</h3>
+   <!--
+   <del>...</del>-used to indicate deleted text
+   sub-used to indicate subscript text
+   sup-used to indicate superscript text
+   small-used to indicate smaller text
+    strong-used to indicate strong importance
+    abbr-used to indicate an abbreviation or acronym
+    cite-used to indicate a citation
+    dfn-used to indicate a definition
+    mark-used to indicate marked or highlighted text
+    time-used to indicate a specific time (or datetime)
+
+    Other Text Formatting Elements:
+    <em>-used to emphasize text
+    <i>-used to indicate italic text
+    <b>-used to indicate bold text
+    <u>-used to indicate underlined text
+    <ol>-defines an ordered (numbered) list
+    <li>-defines a list item
+    <p>-defines a paragraph
+    <br>-inserts a single line break
+    <hr>-inserts a horizontal rule
+    New Text Formatting Elements:
+    <big>-used to indicate bigger text
+    <small>-used to indicate smaller text
+    <strong>-used to indicate strong importance
+    <mark>-used to indicate marked or highlighted text
+    <abbr>-used to indicate an abbreviation or acronym
+    <cite>-used to indicate a citation
+    <dfn>-used to indicate a definition
+    <time>-used to indicate a specific time (or datetime)
+
+   -->
+   <p id="my_choice">
+    Kabarak University is a private <b>Christian university</b> located in Nakuru, Kenya.
+    Established in 2002, it is known for its commitment to academic excellence and holistic education. The university offers a wide range of undergraduate and postgraduate programs across various fields of study, including business, law, education, health sciences, and more. Kabarak University emphasizes the integration of faith and learning, fostering a supportive community that encourages personal growth and development among its students.
+   </p>
+   <h3 class="my_class">Location</h3>
+   <p id="my_choice">Kabarak University is located in <em>Nakuru, Kenya</em>, in the Rift Valley region.
+    It's located 23km from Nakuru. The campus is known for its <i>serene environment and beautiful surroundings</i>, providing an ideal setting for academic pursuits and personal development.</p>
+   <h2>ACADEMIC PROGRAMS</h2>
+   <h3 class="my_class">Schools</h3>
+   <p id="my_choice">Academic programs in Kabarak are spread across the following <u>7 Schools</u>:
+   </p>
+   <ol  id="my_choice">
+    <li>
+        School of Education and Social Sciences
+        
+    </li>
+    <li>
+        School of Business and Economics
+    </li>
+    <li>
+        School of Medicine and Health Sciences
+    </li>
+    <li>
+        School of Law
+    </li>
+    <li>
+        School of Science and Technology
+    </li>
+    <li>
+        School of Music and Media
+    </li>
+    <li>School of Pharmacy</li>
+   </ol>
+    <h3>Courses Offered</h3>
+   <h2 style="font-style:oblique;">ACCOMODATION</h2>
+   <!--oblique and italic have the same effect on text-->
+
+   <p id="my_choice">Kabarak University provides accommodation facilities for both male and female students. The university has several hostels that are designed to offer a comfortable and conducive living environment for students.</p>
+    
+   <table border="1" cellpadding="10" cellspacing="0" >
+    <tr>
+        <th>HOSTEL INFORMATION</th>
+        <th>#</th>
+        <th>Name</th>
+        <th>Population</th>
+    </tr>
+    <tr>
+        <td rowspan="4">MEN'S HOSTEL</td>
+        <td>1</td>
+        <td>Elementaita</td>        
+        <td>250 students</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Baringo</td>
+        <td>250 students</td>
+    </tr>
+    
+    <tr>
+        <td>3</td>
+        <td>Bogoria</td>
+        <td>200 students</td>
+</tr>
+    <tr>
+        <td>4</td>
+        <td>Turkana hostel</td>
+        <td>200 students</td>
+    </tr>
+    <tr>
+        <td rowspan="5">WOMEN'S HOSTEL</td>
+        <td>5</td>
+        <td>Sote A hostel</td>
+        <td>130 students</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>Sote B hostel</td>
+        <td>130 students</td>
+    </tr>
+    
+    <tr>
+        <td>7</td>
+        <td>Kabon hostel</td>
+        <td>130 students</td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>Lena Moi hostel</td>
+        <td>130 students</td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>Central hostel</td>
+        <td>130 students</td>
+    </tr>
+</table>
+
+<h2>Contact Us</h2>
+<form>
+    <h3>Contact Form</h3>
+    <hr>
+    <label for="name">Name:</label>
+    <input type="text" id="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" required>
+
+    <label for="phone">Phone:</label>
+    <input type="tel" required >
+
+    <label for="message">Message:</label>
+    <textarea></textarea>
+
+
+
+</form>
+
+</body>
+</html>
